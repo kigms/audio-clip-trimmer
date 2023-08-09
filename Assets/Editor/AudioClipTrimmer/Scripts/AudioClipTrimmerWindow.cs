@@ -3,6 +3,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+[RequireComponent(typeof(WaveformVisualElement))]
 public class AudioClipTrimmerWindow : EditorWindow
 {
     [MenuItem("Window/Audio Clip Trimmer")]
@@ -14,15 +15,10 @@ public class AudioClipTrimmerWindow : EditorWindow
     private void CreateGUI()
     {
         VisualElement root = rootVisualElement;
-        Label title = new Label("Audio Clip Trimmer");
-        root.Add(title);
+        var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(
+            "Assets/Editor/AudioClipTrimmer/Resources/UIDocuments/AudioClipTrimmerUITemplate.uxml");
 
-        Button loadButton = new Button(() =>
-        {
-            // Think this is like an OnClick() setup
-            // TODO: Handle loading audio clip
-        });
-        loadButton.text = "Load Audio";
-        root.Add(loadButton);
+        VisualElement tree = visualTree.Instantiate();
+        root.Add(tree);
     }
 }

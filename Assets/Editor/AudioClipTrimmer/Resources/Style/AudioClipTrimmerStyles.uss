@@ -1,0 +1,49 @@
+#title {
+    height: 50px;
+    font-size: 30px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    background-color: rgba(0, 0, 0, 255);
+    width: auto;
+    flex-wrap: nowrap;
+    border-left-color: rgba(5, 5, 5, 255);
+    border-right-color: rgba(5, 5, 5, 255);
+    border-top-color: rgba(5, 5, 5, 255);
+    border-bottom-color: rgba(5, 5, 5, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgba(229, 229, 229, 255);
+}
+
+#start-field > Label {
+    max-width: 65px;
+    min-width: 65px;
+}
+
+#end-field > Label {
+    max-width: 65px;
+    min-width: 65px;
+    right: auto;
+    left: 3%;
+}
+
+#length-field > #unity-text-input {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 45px;
+    min-width: 45px;
+}
+
+#length-field > Label {
+    max-width: 45px;
+    min-width: 45px;
+}
