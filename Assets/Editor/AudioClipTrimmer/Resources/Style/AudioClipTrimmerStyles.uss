@@ -3,13 +3,13 @@
     font-size: 30px;
     -unity-font-style: bold;
     -unity-text-align: middle-center;
-    background-color: rgba(0, 0, 0, 255);
+    background-color: rgb(0, 0, 0);
     width: auto;
     flex-wrap: nowrap;
-    border-left-color: rgba(5, 5, 5, 255);
-    border-right-color: rgba(5, 5, 5, 255);
-    border-top-color: rgba(5, 5, 5, 255);
-    border-bottom-color: rgba(5, 5, 5, 255);
+    border-left-color: rgb(5, 5, 5);
+    border-right-color: rgb(5, 5, 5);
+    border-top-color: rgb(5, 5, 5);
+    border-bottom-color: rgb(5, 5, 5);
     border-left-width: 1px;
     border-right-width: 1px;
     border-top-width: 1px;
@@ -18,7 +18,7 @@
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: rgba(229, 229, 229, 255);
+    color: rgb(229, 229, 229);
 }
 
 #start-field > Label {
@@ -46,4 +46,14 @@
 #length-field > Label {
     max-width: 45px;
     min-width: 45px;
+}
+
+#volume-slider > Label {
+    max-width: 50px;
+    min-width: 50px;
+}
+
+#volume-slider > VisualElement {
+    max-width: 100px;
+    min-width: 100px;
 }

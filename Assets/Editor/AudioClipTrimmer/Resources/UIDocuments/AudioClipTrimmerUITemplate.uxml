@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <Style src="project://database/Assets/Editor/AudioClipTrimmer/Resources/Style/AudioClipTrimmerStyles.uss?fileID=7433441132597879392&amp;guid=d6a79ff798b2371458ee174e5cc8e538&amp;type=3#AudioClipTrimmerStyles" />
-    <ui:Label text="Audio Clip Trimmer" display-tooltip-when-elided="true" name="title" style="border-left-color: rgb(24, 24, 24); border-right-color: rgb(24, 24, 24); border-top-color: rgb(24, 24, 24); border-bottom-color: rgb(24, 24, 24); border-left-width: 0.05px; border-right-width: 0.05px; border-top-width: 0.05px; border-bottom-width: 0.05px; background-color: rgb(36, 36, 36); height: 49px; color: rgb(192, 192, 192); font-size: 25px; -unity-font-style: bold;" />
-    <uie:ObjectField label="Load Audio Clip" name="object-field" type="UnityEngine.AudioClip, UnityEngine.AudioModule" style="height: 18px;" />
+    <ui:Label text="Audio Clip Trimmer" display-tooltip-when-elided="true" name="title" style="border-left-color: rgb(24, 24, 24); border-right-color: rgb(24, 24, 24); border-top-color: rgb(24, 24, 24); border-bottom-color: rgb(24, 24, 24); border-left-width: 0.05px; border-right-width: 0.05px; border-top-width: 0.05px; border-bottom-width: 0; background-color: rgb(36, 36, 36); height: 49px; color: rgb(192, 192, 192); font-size: 25px; -unity-font-style: bold; width: auto; flex-direction: column; flex-grow: 1; max-width: 400px; min-width: 200px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;" />
+    <uie:ObjectField label="Load Audio Clip" name="audio-clip-field" type="UnityEngine.AudioClip, UnityEngine.AudioModule" style="height: 18px;" />
     <ui:VisualElement name="placeholder-element" />
-    <ui:MinMaxSlider picking-mode="Ignore" min-value="0" max-value="50" low-limit="0" high-limit="50" name="trimmer" style="opacity: 0.75; visibility: visible; display: flex; overflow: hidden; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px;" />
+    <ui:MinMaxSlider picking-mode="Ignore" min-value="0" max-value="50" low-limit="0" high-limit="50" name="audio-trimmer-slider" style="opacity: 0.75; visibility: visible; display: flex; overflow: hidden; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px;" />
     <ui:VisualElement name="custom-text-values" style="flex-direction: row; justify-content: center; align-items: stretch; flex-shrink: 0;">
         <ui:TextField picking-mode="Ignore" label="Start Time" value="filler text" text="00:00" readonly="false" name="start-field" multiline="false" style="flex-direction: row; flex-grow: 1;" />
         <ui:TextField picking-mode="Ignore" label="End Time" value="filler text" text="00:00" readonly="false" name="end-field" multiline="false" style="flex-direction: row; flex-grow: 1;" />
@@ -13,4 +13,5 @@
         <ui:Button text="Preview" display-tooltip-when-elided="true" name="preview-button" style="flex-grow: 1; max-width: 70px; min-width: 70px;" />
         <ui:Button text="Export" display-tooltip-when-elided="true" name="export-button" style="flex-grow: 1; max-width: 70px; min-width: 70px;" />
     </ui:VisualElement>
+    <ui:Slider picking-mode="Ignore" label="Volume" value="25" high-value="100" name="volume-slider" direction="Horizontal" style="flex-direction: row; flex-wrap: nowrap; flex-grow: 0; flex-basis: auto; max-width: 150px; min-width: 150px; max-height: 20px; min-height: 20px; bottom: auto; top: auto;" />
 </ui:UXML>
