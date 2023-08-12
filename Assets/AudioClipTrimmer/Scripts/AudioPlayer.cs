@@ -30,14 +30,12 @@ public class AudioPlayer : MonoBehaviour
 
     private System.Collections.IEnumerator StopAfterDuration(float newDuration)
     {
-        Debug.Log("Wait for this many seconds until stop: " + newDuration);
         yield return new WaitForSeconds(newDuration);
         audioSource.Stop();
     }
 
     public void AdjustVolume(float newVolume)
     {
-        Debug.Log("Volume: " + newVolume);
         audioSource.volume = newVolume;
     }
 }
