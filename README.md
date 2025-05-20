@@ -12,3 +12,5 @@ Walkthrough:
 - Further down is a button to listen to your trimmed audio and an export button for saving your trimmed audio.
 - Bottommost is the playback volume.
 - On export, you may save your newly trimmed audio clip.
+
+Preview: https://utdallas.box.com/s/axi9sdtsgrwh1nzjdyej2q4ulr1vkt5h
